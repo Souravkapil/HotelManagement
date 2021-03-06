@@ -1,0 +1,172 @@
+{% load static %}
+<!doctype html> 
+<html>
+  <head>
+    <!-- Place your kit's code here -->
+    <script src="https://kit.fontawesome.com/475696d6e2.js" crossorigin="anonymous"></script>
+    <title>Sign up Page</title>
+
+    <style>
+      *{
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    body{
+        background: url("{% static 'images/img7.jpg' %}") no-repeat center center fixed;
+        background-size: cover;
+    }
+
+
+    .container{
+        width: 90%;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        top: .1%;
+        left: 62%;
+    }
+    
+    .container h1{
+        display: inline-block;
+        border-bottom: 3px solid white;
+        font-size: 30px;
+        padding: 5px 0;
+        margin: 16px;
+    }
+    
+    .box{
+        width: 30%;
+        margin: 16px;
+        margin-left: 50px;
+    }
+    
+    .box i{
+        width: 20px;
+        text-align: center;
+        color: white;
+    }
+    
+    .box input{
+        background: none;
+        outline: none;
+        border: none;
+        width: 50%;
+        border-bottom: 3px solid white;
+        margin-left: 10px;
+        padding: 4px ;
+        color: white;
+    }
+    
+    
+    .btn{
+        cursor: pointer;
+        outline: none;
+        margin-top: 7px;
+        padding: 4px 4px;
+        margin-left: 50px;
+        border: 3px solid white;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        background: none;
+        color: white;
+    }
+    
+    .btn:hover{
+        color: black;
+        background: white;
+    }
+    
+    .btn1{
+        cursor: pointer;
+        outline: none;
+        padding: 5px 5px;
+        margin-left: 25px;
+        border: 3px solid white;
+        border-radius: 10px;
+        font-size: 14px;
+        font-weight: bold;
+        background: none;
+        color: white;
+    }
+    
+    .btn1:hover{
+        color: black;
+        background: white;
+    }
+
+    .logo img{
+      width: 12%;
+      margin-left: 15px;
+      margin-top: 15px;
+    }
+
+    .logo1 img{
+            width: 10%;
+            margin-top: 70px;
+            margin-left: 1375px;
+    }
+
+     h3{
+      width: 9.2%;
+      font-size: 20px;
+      color: white;
+      margin-top: 455px;
+      margin-left: 1235px;
+      color: white;
+      border-bottom: 3px solid white;
+      display: inline-block;
+      
+    }
+
+
+    </style>
+  </head>
+
+<body>
+
+        <div class="logo">
+        <img src="{% static 'images/logo3.png' %}">
+      </div>
+
+       <form action="login">
+           <h3>Already a User :</h3>  <button class="btn1" value="login">Login Here</button>
+       </form>
+
+  <form action="signup_data" method ="post">{% csrf_token %}
+
+  <div class="container">
+      <h1>Sign Up</h1>
+      <div class="box">
+      <i class="fa fa-user"></i> : <input type="text" name="username" id="name" placeholder="Username" required=""> 
+      </div>
+
+      <div class="box">
+      <i class="fa fa-envelope"></i> : <input type="email" name="email" id="email" placeholder="Email" required="">
+      </div>
+
+      <div class="box">
+      <i class="fa fa-mobile"></i> : <input type="text" name="contact no." id="contact no." placeholder="Contact No." required="">
+      </div>
+
+      <div class="box">
+      <i class="fa fa-key"></i> : <input type="password" name="password" id="password" placeholder="Password" required="">
+      </div>
+
+      <div class="box">
+      <i class="fa fa-key"></i> : <input type="password" name="re-password" id="re-password" placeholder="Re-type Password" required="">
+      </div>
+
+      <div>
+        <button class="btn">Register</button>
+      </div>
+
+    </div>
+  </form>
+
+    <div class="logo1">
+      <img src="{% static 'images/logo5.png' %}">
+      </div>
+
+</body>
+</html>

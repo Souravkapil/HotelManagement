@@ -1,0 +1,61 @@
+{% load static %}
+<!doctype html> 
+<html>
+  <head>
+    <!-- Place your kit's code here -->
+    <script src="https://kit.fontawesome.com/475696d6e2.js" crossorigin="anonymous"></script>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+
+    <style>
+      body{
+    background: url("{% static 'images/img8.jpg' %}") no-repeat center center fixed;
+    background-size: cover;
+}
+    
+  .logo1 img{
+      width: 13%;
+      margin-top: 1%;
+      margin-left: 1%;
+
+  }
+
+  .logo2 img{
+    width: 11%;
+    margin-top: 560px;
+    margin-left: 1340px;
+  }
+
+    </style>
+
+  </head>
+    
+  <body>
+      <div class="logo1">
+      <img src="{% static 'images/sky-logo-header.png' %}">
+      </div>
+   
+ 
+  
+  <form action="login_data" method ="post">{% csrf_token %}
+    <div class="container">
+        <h1>Login</h1>
+        <div class="box">
+          
+        <i class="fa fa-user"></i> : <input type="text" name="username" id="username" placeholder="Enter Your Username" required="">
+        </div>
+        <div class="box">
+        <i class="fa fa-key"></i> : <input type="password" name="password" id="password" placeholder="Enter Your Password" required="">
+        
+
+        </div>
+        <button class="btn">Sign In</button>
+    </div>
+  </form>
+
+    <div class="logo2">
+    <img src="{% static 'images/logo3.png' %}">
+    </div>
+
+  </body>
+</html>

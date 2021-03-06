@@ -1,0 +1,265 @@
+{% load static %}
+<html>
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Late
+st compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link href="{% static 'css\style-index.css' %}" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+<!--navbar-->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+   	  <a class="col-lg-3 col-xs-12 navbar-brand" href="#"><img src="{% static 'images\sky-logo-header.png' %}"></a>
+</a>
+    </div>
+    <ul class="nav navbar-nav">
+		<li><a href="index">Home</a></li>
+		<li><a href="about">About</a></li>
+		<li><a href="room">Rooms</a></li>
+		<li><a href="gallery">Gallery</a></li>
+		<li><a href="reservation">Reservation</a></li>
+		<li><a href="contact">Contact</a></li>
+		<li><a href="login">Login</a></li>
+    	<li><a href="/">Signup</a></li>
+    	<li><a href="login">Log Out</a></li>
+
+    </ul>
+  </div>
+</nav>
+<!--navbar end-->
+
+
+<!--slider -->
+<div class=" slider">
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="{% static 'images\deluxe-room.jpg' %}" style="height:500px;width:100%"alt="Los Angeles">
+	   
+    </div>
+
+    <div class="item">
+      <img src="{% static 'images\images-7.jpg' %}"style="height:500px;width:100%" alt="Chicago">
+    </div>
+
+    <div class="item">
+      <img src="{% static 'images\hotelhd2.jpg'%}" style="height:500px;width:100%" alt="New York">
+    </div>
+	
+	
+    <div class="item">
+      <img src="{% static 'images\aboutus-img.jpg' %}" style="height:500px;width:100%" alt="New York">
+    </div>
+	  
+	  
+	
+	
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+<!--slider ends-->
+
+
+<!--About us section-->
+<div class="container">
+	<div class="col-lg-12 col-xs-12 aboutus">
+		<div class="col-lg-5 col-xs-12 part-one">
+			<h1 class="heading" style="text-align:left">About us </h1>
+			<p>Contrary to popular belief, Lorem isn’t simply random text.
+			It has roots in a of classical Latin literature from 45 BC, 
+			making it over 2000 years old. Avalon’s leading hotels with 
+			gracious island hospitality, thoughtful amenities and distinctive
+			Richard McClintock, a Latin professor at Hampden-Sydney College 
+			in Virginia, looked up one of the more obscure Latin words, 
+			consectetur, from a Lorem Ipsum passage ...
+			</p>
+			<a href="about" class="btn btn-info btn-default btn-lg" role="button">View More</a>
+
+		</div>
+		<div class="col-lg-7 col-xs-12 part-two">
+			<img src="{% static 'images/colage.jpg' %}" height="500px" width="700px">
+		</div>
+
+	</div>
+</div>
+
+<div class="col-lg-12 col-xs-12 tagline">
+<center>
+<h1><span">Skyline Hotels & Resorts – The luxury of being yourself</h1>
+<a href="contact" class="btn btn-info btn-default btn-lg" role="button">Contact Us</a>
+
+</center>
+</div>
+
+
+
+<!--rooms-->
+<div class="container">	
+	<div class="col-lg-12 col-xs-12 rooms">
+
+		<h1 class="heading" >Our Infrastructure</h1><br><br>
+		
+		<center>
+		<div class="col-lg-4 col-xs-12 room">
+			<img src="{% static 'images\hotelroom.jpg' %}" height="250px" width="340px">
+			<h3>Single room</h3><h5>$80 Per Night</h5>
+			<a href="room" class="btn btn-info btn-default btn-lg" role="button">View </a>
+		</div>
+
+
+		<div class="col-lg-4 col-xs-12 room">
+			<img src="{% static 'images\our-6.jpg' %}" height="250px" width="340px">
+			<h3>Family Room</h3><h5>$120 Per Night</h5>
+			<a href="room" class="btn btn-info btn-default btn-lg" role="button">View </a>
+
+		</div>
+
+		<div class="col-lg-4 col-xs-12 room">
+		
+			<img src="{% static 'images\our-5.jpg' %}" height="250px" width="340px">
+			<h3>Deluxe Room</h3><h5>$150 Per Night</h5>
+			<a href="room" class="btn btn-info btn-default btn-lg" role="button">View </a>
+		</div>
+
+
+		</center>
+	</div>
+</div>
+
+
+<!--gallery-->
+<div class="container">	
+	<div class="col-lg-12 col-xs-12 row-1">
+
+		<h1 class="heading">Gallery</h1><br><br>
+		
+		<center>
+		<div class="col-lg-4 col-xs-12 img">
+			<img src="{% static 'images\gallery-3.jpg' %}" height="250px" width="340px">
+		</div>
+		<div class="col-lg-4 col-xs-12 img">
+			<img src="{% static 'images\our-5.jpg' %}" height="250px" width="340px">
+		</div>
+		<div class="col-lg-4 col-xs-12 img">
+			<img src="{% static 'images\gallery-8.jpg' %}" height="250px" width="340px">
+		</div>
+
+		</center>
+	</div>
+	
+	
+	<div class="col-lg-12 col-xs-12 row-2">
+
+		
+		<center>
+		<div class="col-lg-4 col-xs-12 img">
+			<img src="{% static 'images\images-5.jpg' %}" height="250px" width="340px">
+		</div>
+		<div class="col-lg-4 col-xs-12 img">
+			<img src="{% static 'images\images-4.jpg' %}" height="250px" width="340px">
+		</div>
+		<div class="col-lg-4 col-xs-12 img">
+			<img src="{% static 'images\images-3.jpg' %}" height="250px" width="340px">
+		</div>
+			<a href="gallery" class="btn btn-info btn-default btn-lg" role="button">View More</a>
+
+		</center>
+	</div>	
+</div>
+
+<!--gallery !-->
+
+
+
+<!--Footer-->
+<div class="col-lg-12 footer">
+	<div class="container">
+	
+<!--part 1 logo-->
+		<div class="col-lg-3 col-xs-12 part1">
+			<center>
+				<img src="{% static 'images\sky-logo-footer.png' %}">
+			</center>
+		</div>
+
+<!--part-2 -->
+		<div class="col-lg-3 col-xs-12 part2">
+			<ul>
+			<h4>
+				<li><a href="#site map">Site Map</a></li>
+				<li><a href="#site map">Terms and conditions</a></li>
+				<li><a href="#site map">Privacy Policy </a></li>
+				<li><a href="#site map">Help</a></li>
+				<li><a href="#site map">Affiliate</a></li>
+			</h4>
+			</ul>
+		</div>
+
+<!--part-3-->
+		<div class="col-lg-3 col-xs-12 part3">
+			<ul>
+			<h4>
+				<li><a href="#site map">Our Location</a></li>
+				<li><a href="#site map">Career</a></li>
+				<li><a href="#site map">About Us </a></li>
+				<li><a href="#site map">Contact Us</a></li>
+			</h4>
+			</ul>
+		</div>
+
+
+<!--part-4-->
+		<div class="col-lg-3 col-xs-12 part4">
+			<ul>
+			<h4>
+				<li><a href="#site map">FAQs</a></li>
+				<li><a href="#site map">News</a></li>
+				<li><a href="#site map">Photo and Vedio </a></li>
+				<li><a href="#site map">Restaurant</a></li>
+				<li><a href="#site map">Gift Card</a></li>
+				
+			</h4>
+			</ul>
+		</div>
+
+
+	</div>
+</div>
+<!--Footer ends-->
+
+
+</body>
+
+
+
+</html>

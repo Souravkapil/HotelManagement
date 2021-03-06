@@ -1,0 +1,173 @@
+{% load static %}
+<html>
+<head>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- Late
+	st compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+	<link href="{% static 'css\reservation.css' %}" rel="stylesheet" type="text/css">
+
+</head >
+<body>
+<!--navbar-->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+		  <a class="col-lg-3 col-xs-12 navbar-brand" href="#"><img src="{% static 'images\sky-logo-header.png' %}"></a>
+
+		</div>
+		<ul class="nav navbar-nav">
+			<li><a href="index">Home</a></li>
+			<li><a href="about">About</a></li>		 
+			<li><a href="room">Rooms</a></li>
+			<li><a href="gallery">Gallery</a></li>
+			<li><a href="reservation">Reservation</a></li>
+			<li><a href="contact">Contact</a></li>
+			<li><a href="login">Login</a></li>
+    		<li><a href="/">Signup</a></li>
+    		<li><a href="login">Log Out</a></li>
+		</ul>
+	</div>
+</nav>	
+	
+	
+<div class="container">	
+	<div class="col-lg-12 col-xs-12 main">
+			<div class="col-lg-6 col-xs-12 form">
+					<h1 class="heading">Online Reservations</h1>
+					<form class="contact-form" action="reservationvalue" method="post">{% csrf_token %}
+						<input class=" text" type="text" placeholder="Name" name="name" required="">
+						<input class=" text"type="text" placeholder="Mobile no." name="mob" required="">
+						<input class=" text" type="email" placeholder="E-Mail" name="email" required="">
+					
+					<div class="col-lg-6 col-xs-6 check">
+							<label>Check In</label>
+							<input type="Date" placeholder="Check In" name="check1" required="">
+					</div>	
+					<div class="col-lg-6 col-xs-6 check">
+							<label>Check Out</label>
+							<input type="Date" placeholder="Check out" name="check2" required="">
+					</div>			
+				
+					<div class="col-lg-6 col-xs-6 sel">
+					  <label>Adults</label>
+					  <select name="adults" required="">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6 or More</option>
+						
+					  </select>
+					</div>
+					<div class="col-lg-6 col-xs-6 sel">
+					  <label>Children</label>
+					  <select name="children" required="">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6 or More</option>
+						
+					  </select>
+					</div>
+					<div class="col-lg-6 col-xs-6 sel">
+					  <label>Select Room Type</label>
+					  <select name="selectroom" required="">
+						<option>Single Room</option>
+						<option>Deluxe Room</option>
+						<option>Family Room</option>
+					  </select>					
+					</div>
+					<div class="col-lg-6 col-xs-6 sel">
+					  <label>No. Of Rooms</label>
+					  <select name="numbersofroom" required="">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					  </select>
+					</div>
+					<button type="submit" class="btn btn-info btn-default btn-lg">Reserve Now</button>
+			</form>
+
+		</div>
+
+		
+		
+		<!--image-->
+		
+		<div class="col-lg-6 col-xs-12 image">
+			<img src="{% static 'images\hotelhd1.jpg' %}" style="height:auto;width:100%;margin-top:170px;">
+		</div>
+	
+	
+	</div>
+</div>
+
+<!--Footer-->
+<div class="col-lg-12 footer">
+	<div class="container">
+	
+<!--part 1 logo-->
+		<div class="col-lg-3 col-xs-12 part1">
+			<center>
+				<img src="{% static 'images\sky-logo-footer.png' %}">
+			</center>
+		</div>
+
+<!--part-2 -->
+		<div class="col-lg-3 col-xs-12 part2">
+			<ul>
+			<h4>
+				<li><a href="#site map">Site Map</a></li>
+				<li><a href="#site map">Terms and conditions</a></li>
+				<li><a href="#site map">Privacy Policy </a></li>
+				<li><a href="#site map">Help</a></li>
+				<li><a href="#site map">Affiliate</a></li>
+			</h4>
+			</ul>
+		</div>
+
+<!--part-3-->
+		<div class="col-lg-3 col-xs-12 part3">
+			<ul>
+			<h4>
+				<li><a href="#site map">Our Location</a></li>
+				<li><a href="#site map">Career</a></li>
+				<li><a href="#site map">About Us </a></li>
+				<li><a href="#site map">Contact Us</a></li>
+			</h4>
+			</ul>
+		</div>
+
+
+<!--part-4-->
+		<div class="col-lg-3 col-xs-12 part4">
+			<ul>
+			<h4>
+				<li><a href="#site map">FAQs</a></li>
+				<li><a href="#site map">News</a></li>
+				<li><a href="#site map">Photo and Vedio </a></li>
+				<li><a href="#site map">Restaurant</a></li>
+				<li><a href="#site map">Gift Card</a></li>
+				
+			</h4>
+			</ul>
+		</div>
+
+
+	</div>
+</div>
+<!--Footer ends-->
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+{% load static%}
+<html>
+<head>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- Late
+	st compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+	<link href="{% static 'css\contact.css' %}" rel="stylesheet" type="text/css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+<!--navbar-->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+		  <a class="col-lg-3 col-xs-12 navbar-brand" href="#"><img src="{% static 'images\sky-logo-header.png' %}"></a>
+
+		</div>
+		<ul class="nav navbar-nav">
+			<li><a href="index">Home</a></li>
+			<li><a href="about">About</a></li>
+			<li><a href="room">Rooms</a></li>
+			<li><a href="gallery">Gallery</a></li>
+			<li><a href="reservation">Reservation</a></li>
+			<li><a href="contact ">Contact</a></li>
+			<li><a href="login">Login</a></li>
+    		<li><a href="/">Signup</a></li>
+    		<li><a href="login">Log Out</a></li>
+		</ul>
+	</div>
+</nav><br>
+<!--navbar end-->
+
+<!--Contact form-->
+<div class="container">
+		<div class="col-lg-12 col-xs-12 contact">
+<!--left part-->
+			<div class="col-lg-6 col-xs-12 details">
+				<h1 class="heading">Contact Us</h1>
+				<p>Send in your enquiries and we will reply to you as soon as possible.
+				   Alternatively, you may contact our City offices for further information.
+				  </p>
+				  
+					<ul><i class="fa fa-map-marker" aria-hidden="true"></i></i> Address-121 King Str, Melbourne Victoria</ul>
+					<ul><i class="fa fa-phone-square" aria-hidden="true"></i> Mobile-1-548-854-8898</ul>
+					<ul><i class="fa fa-envelope" aria-hidden="true"></i> E-mail-skylinehotel@gmail.com</ul>
+				
+			</div>
+<!--left part ends-->			
+			
+<!--right part-->			
+			<div class="col-lg-6 col-xs-12 form">
+				<h1 class="heading">Quick Inqueries</h1>
+				<form class="contact-form" action="contactValue" method="post">{% csrf_token %}
+					<input class=" text" type="text" placeholder="Name" name="name" required="">
+					<input class=" sub"type="text" placeholder="Mobile no." name='mob' required="">
+					<input class=" text" type="email" placeholder="E-Mail" name='email' required="">
+					<input class=" sub"type="text" placeholder="Subject" name="sub" required="">
+					<input class=" msg" type="text" placeholder="Write what do you want" name="msg" required="">
+					<button type="submit" class="btn btn-info btn-default btn-lg">Send</button>
+				</form>
+			</div>
+		</div>
+</div>
+
+
+<!--form end->
+
+<!--Footer-->
+<div class="col-lg-12 footer">
+	<div class="container">
+	
+<!--part 1 logo-->
+		<div class="col-lg-3 col-xs-12 part1">
+			<center>
+				<img src="{% static 'images\sky-logo-footer.png' %}">
+			</center>
+		</div>
+
+<!--part-2 -->
+		<div class="col-lg-3 col-xs-12 part2">
+			<ul>
+			<h4>
+				<li><a href="#site map">Site Map</a></li>
+				<li><a href="#site map">Terms and conditions</a></li>
+				<li><a href="#site map">Privacy Policy </a></li>
+				<li><a href="#site map">Help</a></li>
+				<li><a href="#site map">Affiliate</a></li>
+			</h4>
+			</ul>
+		</div>
+
+<!--part-3-->
+		<div class="col-lg-3 col-xs-12 part3">
+			<ul>
+			<h4>
+				<li><a href="#site map">Our Location</a></li>
+				<li><a href="#site map">Career</a></li>
+				<li><a href="#site map">About Us </a></li>
+				<li><a href="#site map">Contact Us</a></li>
+			</h4>
+			</ul>
+		</div>
+
+
+<!--part-4-->
+		<div class="col-lg-3 col-xs-12 part4">
+			<ul>
+			<h4>
+				<li><a href="#site map">FAQs</a></li>
+				<li><a href="#site map">News</a></li>
+				<li><a href="#site map">Photo and Vedio </a></li>
+				<li><a href="#site map">Restaurant</a></li>
+				<li><a href="#site map">Gift Card</a></li>
+				
+			</h4>
+			</ul>
+		</div>
+
+
+	</div>
+</div>
+<!--Footer ends-->
+
+
+
+</body>
+</html>

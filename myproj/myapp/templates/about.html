@@ -1,0 +1,147 @@
+{% load static %}
+<html>
+<head>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- Late
+	st compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+	<link href="{% static 'css\about.css' %}" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<!--navbar-->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+		  <a class="col-lg-3 col-xs-12 navbar-brand" href="#"><img src="{% static 'images\sky-logo-header.png' %}"></a>
+
+		</div>
+		<ul class="nav navbar-nav">
+			<li><a href="index">Home</a></li>
+			<li><a href="about">About</a></li>		 
+			<li><a href="room">Rooms</a></li>
+			<li><a href="gallery">Gallery</a></li>
+			<li><a href="reservation">Reservation</a></li>
+			<li><a href="contact">Contact</a></li>
+			<li><a href="login">Login</a></li>
+    		<li><a href="/">Signup</a></li>
+    		<li><a href="login">Log Out</a></li>
+
+		</ul>
+	</div>
+</nav>
+<!--navbar end-->
+
+<img  src="{% static 'images\aboutus-img.jpg' %}" height="auto" width="100%">
+
+
+<div class=" col-lg-12 col-xs-12 block-2">
+	<div class="container">
+		<div class="col-lg-6 col-xs-12 left-part">		
+			<img src="{% static 'images\reception.jpg' %}" style="width:100%; height:400px" alt="About us">			
+		</div> 
+			<div class="col-lg-6 col-xs-12 right-part">
+					
+					<h1 class="heading">About us</h1>
+					<p>
+					It is a long established fact that a reader will be distracted by the readable content of a page when looking at 
+					its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
+					 to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and
+					 web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many
+					 web sites still in their infancy.
+					There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some 
+					form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use
+					 a passage of Lorem Ipsum, you need to be sure
+					</p>
+					
+			</div>
+		<hr class="line">
+			
+			<div class="col-lg-6 col-xs-12 left-bottom">
+					<h1 class="heading">Why Guest Choose Skyline Hotel?</h1>
+					<p>
+					It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+					The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
+					content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum 
+					as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions 
+					have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+					</p>
+					
+			</div> 
+		<div class="col-lg-6 col-xs-12 right-bottom">
+				<img src="{% static 'images\images-7.jpg' %}" width="100%" height="400px" alt="About us">
+
+		</div>
+	</div>
+</div>
+
+
+
+
+<!--footer starts-->
+
+<div class="col-lg-12 footer">
+		<div class="container">
+	
+<!--part 1 logo-->
+		<div class="col-lg-3 col-xs-12 part1">
+			<center>
+				<img src="{% static 'images/sky-logo-footer.png' %}">
+			</center>
+		</div>
+
+<!--part-2 -->
+		<div class="col-lg-3 col-xs-12 part2">
+			<ul>
+			<h4>
+				<li><a href="#site map">Site Map</a></li>
+				<li><a href="#site map">Terms and conditions</a></li>
+				<li><a href="#site map">Privacy Policy </a></li>
+				<li><a href="#site map">Help</a></li>
+				<li><a href="#site map">Affiliate</a></li>
+			</h4>
+			</ul>
+		</div>
+
+<!--part-3-->
+		<div class="col-lg-3 col-xs-12 part3">
+			<ul>
+			<h4>
+				<li><a href="#site map">Our Location</a></li>
+				<li><a href="#site map">Career</a></li>
+				<li><a href="#site map">About Us </a></li>
+				<li><a href="#site map">Contact Us</a></li>
+			</h4>
+			</ul>
+		</div>
+
+
+<!--part-4-->
+		<div class="col-lg-3 col-xs-12 part4">
+			<ul>
+			<h4>
+				<li><a href="#site map">FAQs</a></li>
+				<li><a href="#site map">News</a></li>
+				<li><a href="#site map">Photo and Vedio </a></li>
+				<li><a href="#site map">Restaurant</a></li>
+				<li><a href="#site map">Gift Card</a></li>
+				
+			</h4>
+			</ul>
+		</div>
+
+
+		</div>
+	</div>
+
+<!--Footer ends-->
+
+</body>
+</html>

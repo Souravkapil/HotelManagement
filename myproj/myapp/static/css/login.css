@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    
+}
+
+.container{
+    color: white;
+    position: absolute;
+    top: 12%;
+    left: 75%;
+}
+.container h1{
+    display: inline-block;
+    font-size: 30px;
+    border-bottom: 3px solid gray;
+    margin-bottom: 5px;
+    padding: 10px 0;
+}
+.box{
+    width: 100%;
+    margin: 22px 0;
+} 
+
+.box i{
+    width: 20px;
+    text-align: center;
+}
+
+.box input{
+    background: none;
+    width: 80%;
+    padding: 5px 1px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid gray;
+    color: rgb(252, 252, 252);
+}
+
+.btn{
+    cursor: pointer;
+    outline: none;
+    margin: 12px  0;
+    padding: 8px 12px;
+    border: 3px solid  gray;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background: none;
+    color: rgb(255, 255, 255);
+}
+
+.btn:hover{
+    color: gray;
+    background: white;
+}
